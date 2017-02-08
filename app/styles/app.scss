@@ -11,6 +11,7 @@
 
 body {
   margin: 0;
+  background: yellow;
 }
 
 ul {
@@ -20,4 +21,21 @@ ul {
 
 img {
   max-width: 100%;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  &__item {
+    border: 1rem solid lightblue;
+    margin: 1rem;
+    flex-grow: 1;
+  }
 }
