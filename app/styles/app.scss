@@ -1,9 +1,11 @@
 // @import 'yoga';
 // @import 'normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+@import 'font-awesome';
 @import 'box-sizing';
+
+$c-border: #5fc4da;
 
 * {
   box-sizing: border-box;
@@ -11,7 +13,6 @@
 
 body {
   margin: 0;
-  background: yellow;
 }
 
 ul {
@@ -33,9 +34,37 @@ img {
 .grid {
   display: flex;
   flex-wrap: wrap;
+
   &__item {
-    border: 1rem solid lightblue;
-    margin: 1rem;
+    flex-basis: calc(100% / 3 - 2rem);
     flex-grow: 1;
+    min-width: 15rem;
+    margin: 1rem;
+    border: 1rem solid $c-border;
+  }
+}
+
+.dropdown__list {
+  display: none;
+}
+
+.shop-card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-bar {
+  display: flex;
+  min-height: 2rem;
+  border-top: 0.5rem solid $c-border;
+
+  &__button {
+    flex-grow: 1;
+    background: none;
+  }
+
+  > * + * {
+    border-left: 0.5rem solid $c-border;
   }
 }
