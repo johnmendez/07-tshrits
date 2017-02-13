@@ -1,12 +1,36 @@
-<!-- Don't copy this link!!! -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.dropdown__list {
-  display: none;
-}
-</style>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>07-tshirts</title>
+  <link rel="stylesheet" href="/app.css">
+  <script src="https://use.fontawesome.com/59b33f5160.js"></script>
+  <!-- Objectives
 
-<!-- Start to copy here -->
+Learning Objectives
+After completing this assignment, you should be able to:
+
+Use Pseudo Selectors (:first-of-type, :last-of-type, :hover, etc.) to style elements
+Use Media Queries
+
+Review Objectives
+After completing this assignment, you should be able to effectively use:
+
+Use flex-box to create a grid with gutters
+Use flex-box to stack content
+Use flex-grow and min-width to make a responsive grid
+Organize SASS using variables
+Organize SASS using @import statements
+Create SASS code free of linting errors
+Use position: relative and position: absolute to create tool tips
+
+Grading Criteria
+
+Desktop Grid Layout
+Placement of dropdown when user hovers
+Change in layout for tablet
+Optimized Media Queries (Don't Repeat Yourself) -->
+</head>
 <body>
   <div class="section">
     <div class="container">
@@ -44,10 +68,10 @@
                   <span class="size">XL</span>
 
                   <ul class="dropdown__list">
-                    <li><span class="size">S</span></li>
-                    <li><span class="size">M</span></li>
-                    <li><span class="size">L</span></li>
-                    <li><span class="size">XL</span></li>
+                    <li class="dropdown__button"><span class="size">S</span></li>
+                    <li class="dropdown__button"><span class="size">M</span></li>
+                    <li class="dropdown__button"><span class="size">L</span></li>
+                    <li class="dropdown__button"><span class="size">XL</span></li>
                   </ul>
                 </button>
                 <button class="button-bar__button">
@@ -91,10 +115,10 @@
                   <span class="size">XL</span>
 
                   <ul class="dropdown__list">
-                    <li><span class="size">S</span></li>
-                    <li><span class="size">M</span></li>
-                    <li><span class="size">L</span></li>
-                    <li><span class="size">XL</span></li>
+                    <li class="dropdown__button"><span class="size">S</span></li>
+                    <li class="dropdown__button"><span class="size">M</span></li>
+                    <li class="dropdown__button"><span class="size">L</span></li>
+                    <li class="dropdown__button"><span class="size">XL</span></li>
                   </ul>
                 </button>
                 <button class="button-bar__button">
@@ -138,10 +162,10 @@
                   <span class="size">XL</span>
 
                   <ul class="dropdown__list">
-                    <li><span class="size">S</span></li>
-                    <li><span class="size">M</span></li>
-                    <li><span class="size">L</span></li>
-                    <li><span class="size">XL</span></li>
+                    <li class="dropdown__button"><span class="size">S</span></li>
+                    <li class="dropdown__button"><span class="size">M</span></li>
+                    <li class="dropdown__button"><span class="size">L</span></li>
+                    <li class="dropdown__button"><span class="size">XL</span></li>
                   </ul>
                 </button>
                 <button class="button-bar__button">
@@ -185,10 +209,10 @@
                   <span class="size">XL</span>
 
                   <ul class="dropdown__list">
-                    <li><span class="size">S</span></li>
-                    <li><span class="size">M</span></li>
-                    <li><span class="size">L</span></li>
-                    <li><span class="size">XL</span></li>
+                    <li class="dropdown__button"><span class="size">S</span></li>
+                    <li class="dropdown__button"><span class="size">M</span></li>
+                    <li class="dropdown__button"><span class="size">L</span></li>
+                    <li class="dropdown__button"><span class="size">XL</span></li>
                   </ul>
                 </button>
                 <button class="button-bar__button">
@@ -232,10 +256,10 @@
                   <span class="size">XL</span>
 
                   <ul class="dropdown__list">
-                    <li><span class="size">S</span></li>
-                    <li><span class="size">M</span></li>
-                    <li><span class="size">L</span></li>
-                    <li><span class="size">XL</span></li>
+                    <li class="dropdown__button"><span class="size">S</span></li>
+                    <li class="dropdown__button"><span class="size">M</span></li>
+                    <li class="dropdown__button"><span class="size">L</span></li>
+                    <li class="dropdown__button"><span class="size">XL</span></li>
                   </ul>
                 </button>
                 <button class="button-bar__button">
@@ -279,10 +303,10 @@
                   <span class="size">XL</span>
 
                   <ul class="dropdown__list">
-                    <li><span class="size">S</span></li>
-                    <li><span class="size">M</span></li>
-                    <li><span class="size">L</span></li>
-                    <li><span class="size">XL</span></li>
+                    <li class="dropdown__button"><span class="size">S</span></li>
+                    <li class="dropdown__button"><span class="size">M</span></li>
+                    <li class="dropdown__button"><span class="size">L</span></li>
+                    <li class="dropdown__button"><span class="size">XL</span></li>
                   </ul>
                 </button>
                 <button class="button-bar__button">
@@ -299,3 +323,4 @@
     </div>
   </div>
 </body>
+</html>
